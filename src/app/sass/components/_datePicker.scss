@@ -1,0 +1,17 @@
+.input {
+  &__date {
+    width: 100% !important;
+    background-color: #eef2f8;
+    border: none !important;
+    font-weight: 300;
+    color: #979dac;
+
+    &:hover {
+      background-color: #f5f5f5 !important;
+    }
+  }
+
+  &__setupdate {
+    margin-bottom: 1rem;
+  }
+}

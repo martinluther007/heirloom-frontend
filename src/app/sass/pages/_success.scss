@@ -44,11 +44,14 @@
 
     & .success__link {
       margin-top: 4rem;
-      transition: ease-out 0.3s;
-
-      &:hover {
-        text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
     }
+  }
+}
+
+.success__link {
+  transition: ease-out 0.3s;
+
+  &:hover {
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
