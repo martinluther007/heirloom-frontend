@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,500&display=swap");
+@import url("http://fonts.cdnfonts.com/css/clash-display");
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // font-size: 62.5%;
+
+  @include respond(xxl) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-weight: 400;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}

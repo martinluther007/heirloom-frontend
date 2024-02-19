@@ -1,0 +1,77 @@
+.overlay {
+  &__main {
+    position: fixed;
+    background-color: rgba($color: #33415c, $alpha: 0.5);
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__close {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    @include respond(lg) {
+      width: 100%;
+    }
+
+    & .image {
+      height: 17.4rem;
+      width: 17.4rem;
+      margin-top: 8rem;
+    }
+
+    & .heading {
+      background-color: #fff;
+      font-family: $default-font;
+      color: #33415c;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      margin-top: 3rem;
+    }
+
+    & .text {
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #979dac;
+      font-family: $sub-font;
+      line-height: 1.9rem;
+      width: 24.4rem;
+      text-align: center;
+      margin-top: 2rem;
+
+      & span {
+        color: #001233;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.otp {
+  &__decline {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-family: $sub-font;
+    text-align: center;
+    width: 17.1rem;
+    color: #001233;
+    margin-top: 3.5rem;
+    font-weight: 400;
+
+    & span {
+      color: #d90368;
+    }
+  }
+}

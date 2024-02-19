@@ -1,0 +1,96 @@
+.input {
+  &__main {
+    background-color: #eef2f8;
+    border: none;
+    padding: 2px 16px;
+    padding-left: 1rem;
+    border-radius: 6px;
+    border: 1px solid #eef2f8;
+    padding-top: 2rem;
+    color: #33415c;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    font-family: $sub-font;
+    text-transform: capitalize;
+    color: #979dac;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+    inset: 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+    cursor: text;
+    font-weight: 300;
+  }
+
+  &__container {
+    position: relative;
+    margin-top: 1rem;
+
+    & .test {
+      border: 1px;
+    }
+  }
+
+  &__login {
+    height: 4rem;
+    width: 34rem;
+    @include respond(xl) {
+      width: 100%;
+    }
+  }
+
+  &__password {
+    cursor: pointer;
+  }
+
+  &__passwordbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__otpcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  &__otp {
+    border-radius: 6px;
+    padding: 1.3rem 1.6rem;
+    background-color: #f5f5f5;
+    border: 1px solid #d2d7df;
+    width: 5.8rem !important;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.input__main:focus ~ .input__label {
+  font-size: 1.2rem;
+  inset: 0% 0% 50% 0%;
+}
+
+.input__main:not(:placeholder-shown) ~ .input__label {
+  font-size: 1.2rem;
+  inset: 0% 0% 50% 0%;
+}

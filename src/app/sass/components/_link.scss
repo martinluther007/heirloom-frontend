@@ -1,0 +1,25 @@
+.recover {
+  color: #fd6130;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  line-height: 1.7rem;
+  margin: 5px 0;
+  display: inline-block;
+
+  &:hover,
+  &:active {
+    color: #e66037;
+  }
+}
+
+.auth__link {
+  text-transform: uppercase;
+  color: #d90368;
+  font-weight: 600;
+  font-family: $default-font;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  display: inline-block;
+  text-align: center;
+}

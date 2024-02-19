@@ -1,0 +1,32 @@
+.button {
+  &__main {
+    text-transform: uppercase;
+    font-family: $default-font;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: block;
+    border: none;
+    background-color: #fd6130;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #e66037;
+    }
+  }
+
+  &__login {
+    margin-top: 2rem;
+  }
+
+  &__otp {
+    width: 70%;
+    margin-top: 5rem;
+  }
+}

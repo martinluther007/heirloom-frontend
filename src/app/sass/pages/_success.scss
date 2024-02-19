@@ -1,0 +1,54 @@
+.success {
+  &__link {
+    text-transform: uppercase;
+    font-family: $default-font;
+    font-weight: 600;
+    color: #fd6130;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    & .logo {
+      margin-top: 6rem;
+    }
+
+    & .heading__main {
+      margin-top: 4rem;
+    }
+
+    & .text__main {
+      margin-top: 1rem;
+      width: 25rem;
+      text-align: center;
+    }
+
+    & .btn {
+      width: 31rem;
+      margin-top: 4rem;
+    }
+
+    & .success__link {
+      margin-top: 4rem;
+      transition: ease-out 0.3s;
+
+      &:hover {
+        text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+  }
+}

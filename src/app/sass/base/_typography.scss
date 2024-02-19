@@ -1,0 +1,19 @@
+.heading {
+  &__main {
+    color: #001233;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-family: $default-font;
+  }
+}
+
+.text {
+  &__main {
+    font-weight: 400;
+    font-family: $sub-font;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #33415c;
+  }
+}
