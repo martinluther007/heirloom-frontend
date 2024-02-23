@@ -1,7 +1,7 @@
 import onboardImage from "@/app/assets/images/Brainstorming-1.jpeg";
 import OnboardingLayout from "@/app/components/core/layouts/OnboardingLayout";
 
-const page = () => {
+const Page = () => {
   return (
     <OnboardingLayout
       text="is a repository for your valuable documents, assets and other information so you never lose them."
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

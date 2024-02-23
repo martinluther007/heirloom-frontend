@@ -5,7 +5,7 @@ import Button from "../components/core/buttons/Button";
 import { IconButton } from "../login/page";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="success__container">
       <Image className="logo" src={logo} alt="company logo" />
@@ -33,4 +33,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

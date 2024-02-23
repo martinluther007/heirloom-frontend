@@ -7,7 +7,7 @@ const Button = ({
   ...props
 }: {
   text: string;
-  icon: JSX.Element;
+  icon?: JSX.Element;
   className: string;
 }) => {
   return (

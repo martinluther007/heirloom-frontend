@@ -1,0 +1,33 @@
+.search {
+  &__box {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__input {
+    padding: 1rem 2rem;
+    width: 34rem;
+    border: 1px solid #d2d7df;
+    border-radius: 6px;
+    color: #979dac;
+    @include respond(sm) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #979dac;
+      text-transform: capitalize;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    cursor: pointer;
+  }
+}

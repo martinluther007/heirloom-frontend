@@ -1,0 +1,260 @@
+.home {
+  &__container {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  &__assetbox {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eef2f8;
+    padding: 2rem 0;
+    width: 100%;
+    @include respond(xxl) {
+      width: 36rem;
+    }
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond(xl) {
+      width: 100%;
+    }
+
+    & .asset__info {
+      color: #979dac;
+      font-size: 1.2rem;
+      font-weight: 400;
+      &--sub {
+        color: #33415c;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__assetcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & div {
+      margin-left: 1rem;
+
+      & h3 {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        color: #33415c;
+        font-family: $default-font;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        color: #979dac;
+      }
+    }
+  }
+
+  &__chartdets {
+    flex: 1;
+    padding: 0 15rem;
+    @include respond(xl) {
+      padding: 0 2rem;
+    }
+  }
+  &__searchcontainer {
+    border-bottom: 1px solid #d2d7df;
+    padding: 2rem;
+  }
+
+  &__assetContain {
+    display: flex;
+    margin-top: 10rem;
+    overflow-y: scroll;
+
+    @include respond(sm) {
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    & h2 {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      color: #979dac;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__assetChartbox {
+    width: 30%;
+    @include respond(xxl) {
+      width: 35rem;
+    }
+
+    @include respond(xl) {
+      width: 30rem;
+    }
+
+    @include respond(lg) {
+      width: 25rem;
+    }
+    @include respond(sm) {
+      width: 100%;
+    }
+  }
+
+  &__maincontent {
+    height: 100vh;
+  }
+  &__main {
+    padding: 2rem;
+    height: 100%;
+
+    &--introbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & button {
+        margin-top: 0 !important;
+      }
+    }
+
+    & .heading {
+      text-transform: capitalize;
+      color: #33415c;
+      font-weight: 600;
+      font-family: $default-font;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+
+    & .text {
+      color: #7c828c;
+    }
+  }
+  &__contentcontainer {
+    height: 100% !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .image {
+      width: 15.8rem;
+      height: 21.6rem;
+    }
+
+    & .text {
+      font-weight: 500 !important;
+      color: #33415c !important;
+      margin-top: 3rem;
+    }
+
+    & .btn {
+      margin-top: 3rem;
+      width: 34rem;
+      @include respond(sm) {
+        width: 100%;
+      }
+    }
+
+    & .link {
+      margin-top: 3rem;
+    }
+  }
+
+  &__navcontainer {
+    position: fixed;
+    height: 100vh;
+    overflow: scroll;
+    width: 26rem;
+    border: 0px 1px 0px 0px;
+    background-image: linear-gradient(#ffffff, #fff0fb);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    @include respond(md) {
+      position: absolute;
+      left: -26rem;
+    }
+
+    & .logo__link {
+      display: inline-block;
+      margin-top: 3rem;
+    }
+  }
+
+  &__maincontent {
+    margin-left: 26rem;
+    width: 100%;
+    width: calc(100% - 26rem);
+    @include respond(md) {
+      margin-left: 0rem;
+      width: 100%;
+    }
+  }
+}
+
+.nav {
+  &__mobilehandler {
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    font-size: 2rem;
+    cursor: pointer;
+
+    @include respond(md) {
+      display: block;
+    }
+  }
+  &__container {
+    padding-left: 3rem;
+    margin-top: 4rem;
+  }
+  &__header {
+    color: #979dac;
+    font-family: $sub-font;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    margin-left: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #979dac;
+    font-family: $default-font;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 4px 0px 0px 4px;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s;
+    margin-top: 1rem;
+
+    &:hover {
+      background-color: #fff0fb;
+    }
+
+    & svg {
+      margin-right: 1rem;
+    }
+
+    &--active {
+      color: #fd6130;
+      background-color: #fff0fb;
+    }
+  }
+}
+
+.navisactive {
+  left: 0;
+  z-index: 10;
+}

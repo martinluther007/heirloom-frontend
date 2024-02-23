@@ -3,7 +3,7 @@ import Button from "@/app/components/core/buttons/Button";
 import { IconButton } from "@/app/login/page";
 import Image from "next/image";
 import Link from "next/link";
-const page = () => {
+const Page = () => {
   return (
     <main className="onboarding__container">
       <div className="setup__successbox">
@@ -24,4 +24,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

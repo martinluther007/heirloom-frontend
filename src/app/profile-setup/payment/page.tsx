@@ -8,7 +8,7 @@ import planImage from "@/app/assets/images/otp.jpeg";
 import CheckBox from "@/app/components/core/inputs/CheckBox";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <Layout text="Choose Your Plan">
       <div className="setup__cont">
@@ -51,4 +51,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

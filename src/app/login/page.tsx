@@ -36,7 +36,7 @@ export const IconButton = () => {
   );
 };
 
-const page = () => {
+const Page = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [overlayIsShown, setOverlayIsShown] = useState(true);
@@ -70,4 +70,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

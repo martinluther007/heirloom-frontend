@@ -1,0 +1,82 @@
+.vault {
+  &__container {
+    padding: 2rem;
+    padding-left: 15rem;
+    padding-right: 8rem;
+    height: 100vh;
+    overflow: auto;
+
+    @include respond(xl) {
+      padding-left: 8rem;
+    }
+    @include respond(lg) {
+      padding: 2rem;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(sm) {
+      width: 100vw;
+      overflow: auto;
+    }
+  }
+
+  &__button {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding-bottom: 3px;
+    border: none;
+    cursor: pointer;
+    color: #979dac;
+
+    @include respond(sm) {
+      margin: 0 1rem;
+    }
+    &:hover {
+      border-bottom: 1.4px solid #ccc;
+    }
+
+    &--active {
+      border-bottom: 1.4px solid #084887;
+      color: #084887;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eef2f8;
+
+    & .image {
+      margin-right: 1rem;
+    }
+
+    & h3 {
+      font-weight: 500;
+      color: #33415c;
+      text-transform: capitalize;
+      font-size: 1.6rem;
+      font-weight: 2.1rem;
+      font-family: $sub-font;
+    }
+
+    & p {
+      color: #979dac;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-family: $sub-font;
+    }
+  }
+
+  &__main {
+    margin-top: 3rem;
+  }
+}

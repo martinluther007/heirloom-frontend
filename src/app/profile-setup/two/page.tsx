@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import Layout from "../Layout";
 import DocumentInput from "@/app/components/core/inputs/DocumentInput";
 
-const page = () => {
+const Page = () => {
   const [image, setImage] = useState<string | null>(null);
   const [maritalStatus, setMaritalStatus] = useState<string>("");
   const [childrenNumber, setChildrenNumber] = useState<string>("");
@@ -51,4 +51,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

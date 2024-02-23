@@ -1,0 +1,141 @@
+.settings {
+  &__linkbox {
+    margin-top: 5rem;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__form {
+    width: 80%;
+    margin-top: 2rem;
+
+    & .intro {
+      color: #979dac;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      font-family: $default-font;
+    }
+
+    @include respond(xl) {
+      width: 90%;
+    }
+  }
+
+  &__linkcard {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #eef2f8;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    &--active {
+      color: #d90368 !important;
+    }
+
+    & p {
+      color: #33415c;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.1rem;
+      font-family: $sub-font;
+    }
+  }
+  &__container {
+    padding: 2rem;
+    display: flex;
+    height: 80%;
+
+    @include respond(md) {
+      padding-left: 2rem;
+    }
+    @include respond(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    width: 50%;
+    padding: 5rem 2rem;
+    border-right: 1px solid #d2d7df;
+
+    @include respond(xl) {
+      padding: 2rem;
+    }
+    @include respond(lg) {
+      padding: 0;
+    }
+
+    @include respond(lg) {
+      width: 100%;
+      border: none;
+    }
+
+    &--1 {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eef2f8;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 5px;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+
+      & div:first-child {
+        display: flex;
+        align-items: center;
+      }
+
+      & .image {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+        border: 1px solid #ccc;
+        margin-right: 1rem;
+      }
+
+      & h3 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #33415c;
+      }
+
+      & p {
+        color: #979dac;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    &--2 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      @include respond(lg) {
+        padding: 0;
+      }
+
+      @include respond(lg) {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem 0;
+      }
+
+      & h3 {
+        color: #33415c;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

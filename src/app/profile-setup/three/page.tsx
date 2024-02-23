@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import Layout from "../Layout";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/material.css";
-const page = () => {
+const Page = () => {
   const [childrenNumber, setChildrenNumber] = useState<string>("");
 
   return (
@@ -37,4 +37,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

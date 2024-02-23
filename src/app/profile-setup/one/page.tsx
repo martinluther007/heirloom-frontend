@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import Layout from "../Layout";
 import DateComponent from "@/app/components/core/inputs/DatePicker";
 
-const page = () => {
+const Page = () => {
   const [image, setImage] = useState<string | null>(null);
   const [maritalStatus, setMaritalStatus] = useState<string>("");
   const [childrenNumber, setChildrenNumber] = useState<string>("");
@@ -48,4 +48,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

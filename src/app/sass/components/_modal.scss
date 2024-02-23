@@ -1,0 +1,105 @@
+.modal {
+  &__close {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+    border-radius: 100%;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  &__container {
+    position: fixed;
+    background-color: rgba($color: #33415c, $alpha: 0.5);
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__contentbox {
+    position: relative;
+
+    background-color: #fffbf8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2rem;
+    @include respond(sm) {
+      width: 90%;
+    }
+
+    & .div__intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h2 {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #33415c;
+      }
+    }
+
+    & .upload__image {
+      width: 17.4rem;
+      height: 17.4rem;
+      margin: 2rem 0;
+    }
+
+    & .asset__card {
+      display: flex;
+      padding: 1.5rem 0;
+      width: 34rem;
+      justify-content: space-between;
+      background-color: transparent;
+      border: none;
+      transition: all 0.3s;
+      align-items: center;
+      border-bottom: 1px solid #eef2f8;
+      cursor: pointer;
+
+      @include respond(sm) {
+        width: 100%;
+      }
+
+      &:hover {
+        border-bottom: 1px solid #fd6130;
+      }
+
+      & div:first-child {
+        display: flex;
+        align-items: center;
+
+        & div {
+          margin-left: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          & h2 {
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            font-family: $sub-font;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: #33415c;
+          }
+
+          & p {
+            color: #979dac;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            font-family: $sub-font;
+          }
+        }
+      }
+    }
+
+    & .asset__container {
+      padding: 0 3rem;
+    }
+  }
+}
