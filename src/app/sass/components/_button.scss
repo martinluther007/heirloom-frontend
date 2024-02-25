@@ -7,6 +7,11 @@
     cursor: not-allowed !important;
   }
 
+  &--def {
+    text-align: center;
+    display: block !important;
+  }
+
   &__adv {
     margin-top: 5rem;
     width: 100%;
@@ -49,5 +54,32 @@
   &__otp {
     width: 70%;
     margin-top: 5rem;
+  }
+}
+
+.button__norm {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #979dac;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &--warning {
+    color: #da2c38;
+
+    &:hover {
+      color: #f31322;
+    }
+  }
+
+  &--okay {
+    color: #30cf63;
+
+    &:hover {
+      color: #16ee5b;
+    }
   }
 }

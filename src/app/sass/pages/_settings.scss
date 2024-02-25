@@ -1,4 +1,21 @@
 .settings {
+  &__reportdate {
+    padding: 1.2rem;
+  }
+  &__assetRep--heading {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-family: $sub-font;
+    color: #979dac;
+    width: 27rem;
+    text-align: center;
+    margin-top: 3rem;
+    & span {
+      font-weight: 500;
+      color: #33415c;
+    }
+  }
   &__linkbox {
     margin-top: 5rem;
   }
@@ -135,6 +152,233 @@
         color: #33415c;
         font-size: 1.6rem;
         line-height: 2.4rem;
+      }
+    }
+  }
+}
+
+.support {
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d90368;
+    border-radius: 1rem;
+    background-color: #fff5fd;
+    padding: 2rem 4rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    @include respond(xsm) {
+      flex-direction: column;
+      padding: 1rem 2rem;
+    }
+
+    & h5 {
+      color: #33415c;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: $sub-font;
+    }
+    & h1 {
+      font-family: $default-font;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: #33415c;
+    }
+  }
+}
+
+.billings {
+  &__3 {
+    width: 100%;
+
+    &--inner {
+      border-bottom: 1px solid #eef2f8;
+      padding: 5px;
+
+      & .main__text {
+        color: #979dac;
+        line-height: 1.9rem;
+        font-size: 9px;
+        text-transform: uppercase;
+        font-family: $sub-font;
+      }
+
+      & .sub__text {
+        font-family: $sub-font;
+
+        color: #979dac;
+        line-height: 1.9rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: #33415c;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__2 {
+    &--box1 {
+      @include respond(xsm) {
+        width: 100%;
+      }
+      & h2 {
+        color: #33415c;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-family: $sub-font;
+        font-weight: 400;
+      }
+
+      & p {
+        color: #33415c;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-family: $default-font;
+        font-weight: 600;
+        margin-top: 5px;
+      }
+    }
+
+    &--box2 {
+      @include respond(xsm) {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      & h2 {
+        color: #33415c;
+        font-size: 9px;
+        line-height: 1.9rem;
+        font-family: $sub-font;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      & p {
+        color: #33415c;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-family: $default-font;
+        font-weight: 700;
+        margin-top: 5px;
+        text-align: right;
+        @include respond(xsm) {
+          text-align: left;
+        }
+      }
+    }
+  }
+  &__1 {
+    margin-top: 3rem;
+
+    &--intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #979dac;
+        text-transform: uppercase;
+      }
+    }
+
+    &--card {
+      border: 1px solid #979dac;
+      background-color: #fffbf8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+
+      @include respond(xsm) {
+        flex-direction: column;
+        padding: 1rem 2rem;
+      }
+
+      & .inner {
+        display: flex;
+        align-items: center;
+      }
+
+      & .text {
+        color: #33415c;
+
+        &--1 {
+          font-family: $sub-font;
+          font-size: 1.4rem;
+          line-height: 1.9rem;
+          margin-left: 1rem;
+        }
+
+        &--2 {
+          font-family: $sub-font;
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.lawyer {
+  &help__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    margin-top: 4rem;
+    & .card {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      &--warning {
+        background-color: #fff0fb;
+      }
+      &--edit {
+        background-color: #e8ffef;
+      }
+    }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eef2f8;
+    padding: 1rem 0;
+
+    & .text {
+      &--1 {
+        color: #979dac;
+        line-height: 1.8rem;
+        font-size: 1.4rem;
+        font-family: $sub-font;
+        text-transform: capitalize;
+      }
+
+      &--2 {
+        color: #33415c;
+        line-height: 2.1rem;
+        font-size: 1.6rem;
+        font-family: $sub-font;
+        padding: 1rem 0;
+        font-weight: 500;
+        text-transform: capitalize;
+
+        &--edit {
+          width: 25rem;
+          text-align: right;
+        }
       }
     }
   }

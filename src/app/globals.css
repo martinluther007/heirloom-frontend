@@ -101,6 +101,10 @@ li {
   justify-content: center !important;
   cursor: not-allowed !important;
 }
+.button--def {
+  text-align: center;
+  display: block !important;
+}
 .button__adv {
   margin-top: 5rem;
   width: 100%;
@@ -140,6 +144,29 @@ li {
 .button__otp {
   width: 70%;
   margin-top: 5rem;
+}
+
+.button__norm {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #979dac;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.button__norm--warning {
+  color: #da2c38;
+}
+.button__norm--warning:hover {
+  color: #f31322;
+}
+.button__norm--okay {
+  color: #30cf63;
+}
+.button__norm--okay:hover {
+  color: #16ee5b;
 }
 
 .recover {
@@ -1266,6 +1293,23 @@ li {
   margin-top: 3rem;
 }
 
+.settings__reportdate {
+  padding: 1.2rem;
+}
+.settings__assetRep--heading {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-family: "Poppins", sans-serif;
+  color: #979dac;
+  width: 27rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.settings__assetRep--heading span {
+  font-weight: 500;
+  color: #33415c;
+}
 .settings__linkbox {
   margin-top: 5rem;
 }
@@ -1401,6 +1445,209 @@ li {
   color: #33415c;
   font-size: 1.6rem;
   line-height: 2.4rem;
+}
+
+.support__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d90368;
+  border-radius: 1rem;
+  background-color: #fff5fd;
+  padding: 2rem 4rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 380px) {
+  .support__card {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}
+.support__card h5 {
+  color: #33415c;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.support__card h1 {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #33415c;
+}
+
+.billings__3 {
+  width: 100%;
+}
+.billings__3--inner {
+  border-bottom: 1px solid #eef2f8;
+  padding: 5px;
+}
+.billings__3--inner .main__text {
+  color: #979dac;
+  line-height: 1.9rem;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.billings__3--inner .sub__text {
+  font-family: "Poppins", sans-serif;
+  color: #979dac;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #33415c;
+  font-weight: 700;
+}
+@media screen and (max-width: 380px) {
+  .billings__2--box1 {
+    width: 100%;
+  }
+}
+.billings__2--box1 h2 {
+  color: #33415c;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.billings__2--box1 p {
+  color: #33415c;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+}
+@media screen and (max-width: 380px) {
+  .billings__2--box2 {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+.billings__2--box2 h2 {
+  color: #33415c;
+  font-size: 9px;
+  line-height: 1.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.billings__2--box2 p {
+  color: #33415c;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 700;
+  margin-top: 5px;
+  text-align: right;
+}
+@media screen and (max-width: 380px) {
+  .billings__2--box2 p {
+    text-align: left;
+  }
+}
+.billings__1 {
+  margin-top: 3rem;
+}
+.billings__1--intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.billings__1--intro p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #979dac;
+  text-transform: uppercase;
+}
+.billings__1--card {
+  border: 1px solid #979dac;
+  background-color: #fffbf8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 380px) {
+  .billings__1--card {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}
+.billings__1--card .inner {
+  display: flex;
+  align-items: center;
+}
+.billings__1--card .text {
+  color: #33415c;
+}
+.billings__1--card .text--1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  margin-left: 1rem;
+}
+.billings__1--card .text--2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+.lawyerhelp__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  margin-top: 4rem;
+}
+.lawyerhelp__box .card {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+.lawyerhelp__box .card--warning {
+  background-color: #fff0fb;
+}
+.lawyerhelp__box .card--edit {
+  background-color: #e8ffef;
+}
+.lawyer__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eef2f8;
+  padding: 1rem 0;
+}
+.lawyer__card .text--1 {
+  color: #979dac;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.lawyer__card .text--2 {
+  color: #33415c;
+  line-height: 2.1rem;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.lawyer__card .text--2--edit {
+  width: 25rem;
+  text-align: right;
 }
 
 /*# sourceMappingURL=globals.css.map */
